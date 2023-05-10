@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Комуникациски вештини</title>
+    <link href="navigacija.css" rel="stylesheet">
+</head>
+<body>
+    <style>
+     .prvo{
+       width: 50%;
+       margin: auto;
+       margin-top: 5vh;
+       height: 30%;
+
+     }
+      .paragraf{
+        margin: 0 0;
+           padding-top: 2.5vh;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 2.3vw;  
+    background-size: cover;
+    background-image: url("pozadina.jpg");
+    text-shadow: 0px 0px 6px #15ff00;
+            font-weight: bold;
+            text-align: center;
+            background-repeat: no-repeat;
+            border-radius: 2vh;
+        
+      }
+
+      .vtoro{
+        width: 33%;
+        
+      
+      }
+
+      .slika{
+        margin-left: 4vh;
+        width: 80%;
+        margin-top: 5vh;
+        border: 0.5vh solid black;
+        border-radius: 1vh;
+      }
+      .slika2{
+        margin: auto;
+        margin-left: 4vh;
+        width: 80%;
+        height: 69%;
+        margin-top: 5vh;
+        border: 0.5vh solid black;
+        border-radius: 1vh;
+      }
+      .slika3{
+        margin: auto;
+        margin-left: 4vh;
+        width: 80%;
+        margin-top: 1.3vh;
+        border: 0.5vh solid black;
+        border-radius: 1vh;
+      }
+      .glavniot{
+        width: 100%;
+        display: flex;
+        margin: auto;
+        height: 50%;
+       
+        
+      }
+      .paragraf2{
+        margin: 0 0;
+        
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1.2vw;  
+
+    
+            font-weight: bold;
+            text-align: center;
+            background-repeat: no-repeat;
+            border-radius: 2vh;
+      }
+    #ha,#he,#hi{
+     display:none;
+    }
+
+    </style>
+    
+    <div class="bg"><nav class="nav">
+        <ul class="neodredena">
+            <li><a href="index.html">Дома</a></li>
+        </ul>
+    
+    
+   
+
+    </nav>
+    <div class="prvo">
+       <p class="paragraf">Добри комуникациски вештини стекнати од:</p>
+    </div>
+
+ <div class="glavniot">
+<div class="vtoro" id="ha">
+<p class="paragraf2">Често работење на групни проекти</p>
+<img id="slnk" src="group.jpeg" class="slika">
+</div>
+<div class="vtoro" id="he">
+    <p class="paragraf2">Работење на социјални места како кафичи</p>
+    <img src="cresh.jpg" class="slika2">
+
+</div>
+<div class="vtoro" id="hi">
+    <p class="paragraf2">Општо фреквентно социјализирање во моето слободно време</p>
+    <img src="interesno.jpg" class="slika3">
+    
+</div>
+
+ </div>
+
+    </div>
+
+    <script>
+     
+     var div1=document.getElementById("ha");
+     var div2=document.getElementById("he");
+     var div3=document.getElementById("hi");
+            setTimeout(pojavi,1000);
+            setTimeout(pojavi2,2000);
+            setTimeout(pojavi3,3000);
+         
+   function pojavi(){
+    div1.style.display="block";
+ 
+ 
+   }
+
+   function pojavi2(){
+    div2.style.display="block";
+   }
+   function pojavi3(){
+    div3.style.display="block";
+   }
+        
+
+
+    </script>
+</body>
+</html>

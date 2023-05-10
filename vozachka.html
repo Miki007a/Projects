@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Возачка дозвола</title>
+    <link href="navigacija.css" rel="stylesheet">
+</head>
+<body>
+    <style>
+      .drvo{
+           background-image: url("branch.png");
+           width: 100%;
+           background-repeat: no-repeat;
+           background-size: cover;
+
+           height: 100%;
+
+      }
+      .kola{
+        position: absolute;
+        background-image: url("ferarkata.png");
+           width: 20%;
+           background-repeat: no-repeat;
+           background-size: contain;
+height: 10%;
+margin-top: 37vh;
+      left: -80vh;
+           
+      }
+     .stop{
+        background-image: url("stop.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 15%;
+        position: absolute;
+        margin-left: 110vh;
+        height: 30%;
+        margin-top: 13vh;
+    
+     }
+     #paragraf{
+        text-align: center;
+        margin-top: 5.7vh;
+        margin-left: 2vh;
+        font-weight: bold;
+        display: none;
+        font-size: 1.7vw;
+     }
+
+    </style>
+    <div class="bg"><nav class="nav">
+        <ul class="neodredena">
+            <li><a href="index.html">Дома</a></li>
+        </ul>
+    </nav>
+
+<div class="drvo"> 
+<div class="kola" id="ferar">
+
+</div>
+<div class="stop"><p id="paragraf">Ам и <br>Б</p></div>
+
+</div>
+
+
+</div>
+
+<script>
+    var ferari=document.getElementById("ferar");
+    var pos=-80;
+    var pos1=-198.4;
+    var rot=0;
+   var prom=setInterval(letaj,6);
+  var trkalo=setInterval(vrti,6);
+    var trkalo1=document.getElementById("trkalo");
+
+
+
+    function letaj(){
+    pos=pos+0.5;
+    ferari.style.left=pos+"vh";
+    if(pos>80){
+       
+    ferari.style.left=pos+"vh";
+    clearInterval(prom);
+     pojavi();
+    }
+    
+    } 
+  
+    
+    
+
+
+
+      function pojavi(){
+         var para=document.getElementById("paragraf");
+          para.style.display="block";
+
+      }
+    </script>
+</body>
+</html>

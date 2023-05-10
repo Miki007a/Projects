@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лични информации</title>
+    <link href="navigacija.css" rel="stylesheet">
+</head>
+<body>
+    <style>
+ 
+
+.informacii{
+    width: 100%;
+    background-color: greenyellow;
+    margin: auto;
+    margin-top: 4vh ;
+    display: flex;
+    justify-content: space-evenly;
+    border: solid black 2px;
+ 
+
+}
+#tabs{
+    width: 100%;
+}
+.divovi{
+    width: 50%;
+    margin: auto;
+    margin-top: 25vh;
+        text-align: center;
+    font-size: 4vw;
+    color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+ 
+    border-radius: 2vh;
+    text-shadow: 0px 0px 6px #15ff00;
+}
+    </style>
+<div class="bg">
+<nav class="nav">
+    <ul class="neodredena">
+        <li><a href="index.html">Дома</a></li>
+    </ul>
+</nav>
+  
+
+    <div id="tabs">
+        <ul class="informacii">
+            <li class="listi"><a href="#1">Име и презиме</a></li>
+            <li class="listi"><a href="#2">Контакт</a></li>
+            <li class="listi"><a href="#3">Дополнителни информации</a></li>
+        </ul>
+        <div id="1" class="divovi">Михаил Трајковиќ</div>
+        
+        <div id="2" class="divovi">078 854 460    mihailtrajkovikj@yahoo.com</div>
+        <div id="3" class="divovi">Пол: Машки<br> Датум на раѓање: 13.06.2002 <br> Националност: Србин</div>
+    </div>
+
+
+</div>
+<script src="jquery.js"></script>
+<script src="jquery-ui.js"></script>
+<script>
+
+$( "#tabs" ).tabs();
+
+    </script>
+
+</body>
+</html>

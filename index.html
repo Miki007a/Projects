@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Дома</title>
+</head>
+
+<style>
+
+
+body, html {
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+}
+.bg {
+  background-image: url("meadow.jpg");
+position: absolute;
+width: 100%;
+  height: 100%; 
+
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#tree{  
+ 
+    margin: auto;
+   width: 50%;
+   position: absolute;
+   height: 80%;
+left: 26%;
+bottom: 0;
+}
+
+.parag{
+  
+    position: relative;
+    padding: 0 0;
+    margin-left: 0;
+    margin-right: 0;
+   margin-top: 26vh;
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.2vw;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  
+    
+}
+
+.parag2{
+margin-left: -31vh;
+padding: 0 0;
+margin-left: 5;
+margin-right: 5;
+font-weight: bold;
+    text-align: center;
+position: relative;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+font-size: 0.8vw;
+}
+.parag3{
+
+padding: 0 0;
+
+margin-right: 55vh;
+font-weight: bold;
+    text-align: center;
+position: relative;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+font-size: 0.9vw;
+}
+.parag4{
+margin-top: 5vh;
+padding: 0 0;
+
+margin-right: 68vh;
+font-weight: bold;
+    text-align: center;
+position: relative;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+font-size: 1.2vw;
+}
+.parag5{
+margin-top: 5vh;
+padding: 0 0;
+margin-top: -18vh;
+margin-right: -44vh;
+font-weight: bold;
+    text-align: center;
+position: relative;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+font-size: 0.7vw;
+}
+
+.parag6{
+margin-top: 5vh;
+padding: 0 0;
+margin-top: 1vh;
+margin-right: -67vh;
+font-weight: bold;
+    text-align: center;
+position: relative;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+font-size: 0.76vw;
+}
+.parag7{
+
+padding: 0 0;
+margin-top: 6vh;
+margin-right: -75vh;
+font-weight: bold;
+    text-align: center;
+position: relative;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+font-size: 0.9vw;
+}
+
+a{
+    color: brown;
+    text-decoration: none;
+
+}
+a:hover{
+    color: green;
+    text-shadow: 0px 0px 6px #15ff00;
+}
+#cloud{
+    width: 30%;
+    height: 35%;
+    position: absolute;
+   top: 5vh;
+   left: -80vh;
+   
+ 
+}
+</style>
+<body>
+    <div class="bg">
+        <img src="cloud2.png" alt="" id="cloud">
+<img src="tree8.png" alt="" id="tree"/>
+
+<div class="parag">
+    <a href="lichni.html" >Лични<br>информации</a> 
+    </div>
+    <div class="parag2">
+        <a href="obrazovanie.html" >Образование<br>и обука</a> 
+        </div>
+
+        <div class="parag3">
+            <a href="lichnive.html" >Лични<br>вештини</a> 
+            </div>
+            <div class="parag4">
+                <a href="proekti.html" >Проекти</a> 
+                </div>
+
+
+                <div class="parag5">
+                    <a href="komunikacija.html" >Комуникациски <br> вештини</a> 
+                    </div>
+
+                    <div class="parag6">
+                        <a href="kompjuterski.html" >Компјутерски <br> вештини</a> 
+                        </div>
+                        <div class="parag7">
+                            <a href="vozachka.html" >Возачка <br> дозвола</a> 
+                            </div>
+                          
+
+
+
+
+</div>
+
+<script>
+var oblak=document.getElementById("cloud");
+var pos=-80;
+setInterval(letaj,10);
+
+
+function letaj(){
+pos=pos+0.5;
+oblak.style.left=pos+"vh";
+if(pos>200){
+pos=-80;
+oblak.style.left=pos+"vh";
+}
+
+}
+
+</script>
+
+
+</body>
+</html>

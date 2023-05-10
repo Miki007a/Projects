@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Проекти</title>
+    <link href="navigacija.css" rel="stylesheet">
+</head>
+<body>
+    <style>
+        #git{
+            background-image: url("BANNER.jpg");
+            background-repeat: no-repeat;
+           background-size: cover;
+            width: 50%;
+            height: 50%;
+            margin: auto;
+            margin-top: 20vh;
+            border: 0.4vh solid rgb(30, 56, 0);
+            border-radius: 1vh;
+            display: flex;
+
+        }
+        .klasa{
+            text-align: center;
+            padding: 0;
+            margin: auto;
+            display: none;
+            font-size: 2vw;
+            text-shadow: 0px 0px 6px #da1515;
+
+        }
+        #link{
+            width: 49.4%;
+            position: absolute;
+            height: 5%;
+            margin-top: 22.4vh;
+        }
+        #link:hover{
+            background-color: #d64848;
+            opacity: 20%;
+        }
+    </style>
+    <div class="bg"><nav class="nav">
+        <ul class="neodredena">
+            <li><a href="index.html">Дома</a></li>
+        </ul>
+    </nav>
+
+<div id="git"><a href="https://github.com/Miki007a/Projects" id="link"></a></div>
+
+
+    </div>
+
+
+
+    <script>
+        document.getElementById("git");
+         
+              var git="https://github.com/Miki007a/Projects";
+     var elemet=document.getElementById("git");
+             var niza=git.split("");
+             for (let index = 0; index < niza.length; index++) {
+                var bukva=document.createElement("p");
+                bukva.textContent=niza[index];
+                bukva.classList="klasa";
+                elemet.append(bukva);
+
+                 setTimeout(pojavi,Math.floor(Math.random()*1000),bukva);
+          
+             }
+             function pojavi(k){
+               
+               k.style.display="block";
+
+             }
+
+         
+
+    </script>
+</body>
+</html>
